@@ -1,4 +1,5 @@
 // Cargar productos al iniciar
+/* 
 document.addEventListener('DOMContentLoaded', () => {
     loadProducts();
     setupContactForm();
@@ -12,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-
+ */
 // Cargar productos desde localStorage
 function loadProducts() {
     const products = JSON.parse(localStorage.getItem('products') || '[]');
@@ -25,7 +26,7 @@ function loadProducts() {
                 id: 1,
                 nombre: "Paracetamol 500mg",
                 precio: 5990,
-                imagen: "https://via.placeholder.com/300x250/0066B3/white?text=Paracetamol",
+                imagen: "../img/paracetamol.webp",
                 descripcion: "Analgésico y antipirético para el alivio del dolor leve a moderado.",
                 categoria: "Medicamentos"
             },
@@ -33,7 +34,7 @@ function loadProducts() {
                 id: 2,
                 nombre: "Vitamina C 1000mg",
                 precio: 8990,
-                imagen: "https://via.placeholder.com/300x250/00B4D8/white?text=Vitamina+C",
+                imagen: "../img/vitamina_c.png",
                 descripcion: "Refuerza el sistema inmunológico y previene resfriados.",
                 categoria: "Vitaminas"
             },
@@ -41,7 +42,7 @@ function loadProducts() {
                 id: 3,
                 nombre: "Jabón Antibacterial",
                 precio: 2990,
-                imagen: "https://via.placeholder.com/300x250/FF6B35/white?text=Jabón",
+                imagen: "../img/alcohol.png",
                 descripcion: "Jabón líquido antibacterial para uso diario.",
                 categoria: "Cuidado Personal"
             }
